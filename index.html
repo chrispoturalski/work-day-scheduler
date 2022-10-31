@@ -22,16 +22,60 @@
       <!-- Timeblocks go here -->
       <!--We need to style each div with CSS, we need to create a column(s) and a row for each hour to include -->
       <!--inc... the time, the activity and then the save button-->
-      <div>8:00AM</div>
-      <div>9:00AM</div>
-      <div>10:00AM</div>
-      <div>11:00AM</div>
-      <div>12:00PM</div>
-      <div>1:00PM</div>
-      <div>2:00PM</div>
-      <div>3:00PM</div>
-      <div>4:00PM</div>
-      <div>5:00PM</div>
+        <!--Here is the div that we will be using for each time block element-->
+        <div id="hour" class="row time-block"> <!--This is targeting the specific section within a Div-->
+          <!--Medium column below that spans 1 column-->
+          <div class="col-md-1 hour">9AM</div> <!--This is targeting the specific hour-->
+          <!--Medium column that spans 10 columns-->
+          <textarea class="col-md-10 description">"Here's my text"</textarea> <!--This will focus more on the event description that is taking place-->
+          <!--Medium column that spans 1 column-->
+          <button class="btn saveBtn col-md-1">Save</button> <!--This is targeting the save button-->
+        </div>
+        <div id="hour" class="row time-block">
+          <div class="col-md-1 hour">10AM</div>
+          <textarea class="col-md-10 description">"Here's my text"</textarea>
+          <button class="btn saveBtn col-md-1">Save</button>
+        </div>
+        <div id="hour" class="row time-block">
+          <div class="col-md-1 hour">11AM</div>
+          <textarea class="col-md-10 description">"Here's my text"</textarea>
+          <button class="btn saveBtn col-md-1">Save</button>
+        </div>
+        <div id="hour" class="row time-block">
+          <div class="col-md-1 hour">12PM</div>
+          <textarea class="col-md-10 description">"Here's my text"</textarea>
+          <button class="btn saveBtn col-md-1">Save</button>
+        </div>
+        <div id="hour" class="row time-block">
+          <div class="col-md-1 hour">1PM</div>
+          <textarea class="col-md-10 description">"Here's my text"</textarea>
+          <button class="btn saveBtn col-md-1">Save</button>
+        </div>
+        <div id="hour" class="row time-block">
+          <div class="col-md-1 hour">2PM</div>
+          <textarea class="col-md-10 description">"Here's my text"</textarea>
+          <button class="btn saveBtn col-md-1">Save</button>
+        </div>
+        <div id="hour" class="row time-block">
+          <div class="col-md-1 hour">3PM</div>
+          <textarea class="col-md-10 description">"Here's my text"</textarea>
+          <button class="btn saveBtn col-md-1">Save</button>
+        </div>
+        <div id="hour" class="row time-block">
+          <div class="col-md-1 hour">4PM</div>
+          <textarea class="col-md-10 description">"Here's my text"</textarea>
+          <button class="btn saveBtn col-md-1">Save</button>
+        </div>
+        <div id="hour" class="row time-block">
+          <div class="col-md-1 hour">5PM</div>
+          <textarea class="col-md-10 description">"Here's my text"</textarea>
+          <button class="btn saveBtn col-md-1">Save</button>
+        </div>
+        <div id="hour" class="row time-block">
+          <div class="col-md-1 hour">6PM</div>
+          <textarea class="col-md-10 description">"Here's my text"</textarea>
+          <button class="btn saveBtn col-md-1">Save</button>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
