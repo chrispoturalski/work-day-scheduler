@@ -43,8 +43,26 @@ currentTime();
 
 
 //When I click the save button for that time block, then text is saved in local storage
-
+$(".saveBtn").on("click", function() {
+    //this pulls the information from the timeblock element from HTML
+    var timeBlock = $(this).parent().attr('id');
+    //This should pull the information that we put in the description
+    var text = $(this).siblings(".description").val();
+    localStorage.setItem(timeBlock, text);
+})
 //When I refresh page, the saved events persits
+//This should pull the saved information for once we refresh page
+$("#hour-9 .description").val(localStorage.getItem('hour-9'));
+$("#hour-10 .description").val(localStorage.getItem('hour-10'));
+$("#hour-11 .description").val(localStorage.getItem('hour-11'));
+$("#hour-12 .description").val(localStorage.getItem('hour-12'));
+$("#hour-13 .description").val(localStorage.getItem('hour-13'));
+$("#hour-14 .description").val(localStorage.getItem('hour-14'));
+$("#hour-15 .description").val(localStorage.getItem('hour-15'));
+$("#hour-16 .description").val(localStorage.getItem('hour-16'));
+$("#hour-17 .description").val(localStorage.getItem('hour-17'));
+$("#hour-18 .description").val(localStorage.getItem('hour-18'));
+
 
 
 
