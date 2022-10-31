@@ -20,13 +20,19 @@ $("#currentDay").text(moment().format("MMM D, YYYY"));
 //When I look at the timeblocks, then each timeblock is color coded to indicate 
 //whether it is  in the past, present, or future
 function currentTime() {
+    //targets the time-block element from HTML
     $(".time-block").each(function () {
+        // returns an the hour within each "id" div from HTML
         var presentTime = parseInt($(this).attr("id").split("-")[1]);
+        // pulls the current hour
         var absoluteTime = moment().hour();
+        // if hour equals current hour, then will pull CSS element to turn event box red
         if (presentTime === absoluteTime) {
             $(this).addClass("present");
+        // if current hour is greater than hour, then will pull CSS element to turn event box gray
         } else if (presentTime < absoluteTime) {
             $(this).addClass("past");
+        // if hour is earlier current hour, then will pull CSS element to turn event box green
         } else {
             $(this).addClass("future");
         }
