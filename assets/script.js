@@ -5,13 +5,12 @@ var qs = function (tag) {
     return document.querySelector(tag);
 };
 
-var currentDay = qs("currentDay");
-
-
-
-
-
-
+//This is where we first SELECT ALL our elements that we will interact with from HTML:
+var hour = qs(".hour");
+var row = qs(".row");
+var hour = qs(".hour");
+var description = qs(".description");
+var saveBtn = qs(".saveBtn");
 
 
 
