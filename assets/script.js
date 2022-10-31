@@ -1,13 +1,11 @@
 //Main Goal
 //I want to add events to a daily planner so that I can manage my time effectively
+//utility function to select an element based on tag
+var qs = function (tag) {
+    return document.querySelector(tag);
+};
 
-
-
-
-
-
-
-
+var currentDay = qs("currentDay");
 
 
 
